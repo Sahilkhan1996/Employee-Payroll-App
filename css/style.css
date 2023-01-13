@@ -1,0 +1,289 @@
+header {
+    display: flex;
+    flex-flow: row;
+    background-color: #FFFFFF;
+    padding: 20px 20px;
+}
+
+.headerTitle {
+    font-size: 22px;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.headerLogo {
+    height: 50px;
+    width: 46px;
+}
+
+.header1 {
+    color: #82A70C;
+}
+
+.header2 {
+    color: #42515F;
+}
+
+.formContent {
+    min-height: calc(100% - 80px);
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.userForm {
+    background-color: #FFFFFF;
+    width: 65%;
+    padding: 45px 150px;
+    margin: 50px 0px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.formHeaderTitle {
+    font-size: 28px;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    color: #42515F;
+}
+
+label {
+    color: #42515F;
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+    flex: 1;
+}
+
+.formInput {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.errorDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    flex: 3;
+    background-color: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    border-radius: 3px;
+    font: normal normal normal 18px/24px Roboto;
+    padding: 10px 10px;
+}
+
+.input {
+    flex: 3;
+    background-color: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    border-radius: 3px;
+    font: normal normal normal 18px/24px Roboto;
+    padding: 10px 10px;
+}
+
+.formRadioContent {
+    flex: 3;
+    display: flex;
+    flex-flow: row;
+}
+
+.formCheckboxContent {
+    flex: 3;
+    display: flex;
+    flex-flow: row;
+}
+
+.formRadioContent>span {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.formCheckboxContent>span {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.salaryContent {
+    flex: 3;
+    display: flex;
+    align-items: center;
+}
+
+.startDateContent {
+    flex: 3;
+    display: flex;
+    align-items: center;
+}
+
+select {
+    padding: 12px 18px;
+    border: 1px solid #BDBDBD;
+    border-radius: 4px;
+    font: normal normal normal 16px Roboto;
+    letter-spacing: 0px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+
+.profileImg {
+    width: 40px;
+    margin-left: 8px;
+}
+
+margin {
+    margin-left: 40px;
+}
+
+#month, #year {
+    margin-left: 24px;
+}
+
+.buttonParent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.cancelButton {
+    text-decoration: none;
+    text-align: center;
+}
+
+.submitButton {
+    margin-right: 30px;
+    background-color: #F5F5F5;
+    border: none;
+}
+
+.button {
+    font-size: 20px;
+    font-family: Roboto;
+    letter-spacing: 0;
+    color: #42515F;
+    opacity: 1;
+    background-color: transparent;
+    border: none;
+    font-weight: 400;
+    min-width: 140px;
+    padding: 7px 7px;
+    border: 1px solid #969696;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 850px) {
+    .cancelButton {
+        margin-left: 0px;
+    }
+    .userForm {
+        width: 85%;
+        padding: 44px 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .userForm {
+        margin-top: 10px;
+    }
+    .formRadioContent {
+        flex-flow: wrap;
+    }
+
+    .formCheckboxContent {
+        flex-flow: wrap;
+    }
+    .submit-reset {
+        width: 100%;
+        display: flex;
+        order: 1;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .submitButton {
+        margin: 0;
+    }
+    .buttonParent {
+        flex-direction: column-reverse;
+    }
+}
+
+.errorDiv > span {
+    flex: 1;
+}
+
+error-output {
+    flex: 3;
+    color: red;
+    font-size: 12px;
+    font-style: italic;
+    /* margin-left: 10px; */
+    margin-top: 10px;
+    min-width: 140px;
+}
+
+.add-button {
+    background: #82A70C 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    padding: 5px 18px;
+    text-align: left;
+    font: normal normal normal 22px/29px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #F7F7F7;
+    padding: 30px 0 10px;
+}
+
+.emp-detail-text {
+    text-align: left;
+    font: normal normal bold 20px/25px Roboto;
+    letter-spacing: 0px;
+    color: #42515F;
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.emp-count {
+    margin-left: 50px;
+}
+
+td,
+th {
+    text-align: left;
+    padding: 5px 8px;
+}
+
+td img {
+    cursor: pointer;
+}
+
+td img:first-child {
+    margin-right: 10px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 0px solid green;
+}
+
+.progileRow {
+    display: flex;
+    align-items: center;
+}
